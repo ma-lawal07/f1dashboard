@@ -1,0 +1,189 @@
+﻿:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #e2e8f0;
+  background: #090e1a;
+  font-synthesis: none;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+header,
+.toolbar,
+.comparison-header,
+.buttons,
+.selectors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(28px, 4vw, 42px);
+  letter-spacing: -1px;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 19px;
+}
+
+.eyebrow {
+  color: #f87171;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.subtitle,
+footer {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.status {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #293044;
+  font-size: 13px;
+}
+
+.status.online {
+  background: #12382e;
+  color: #6ee7b7;
+}
+
+.toolbar,
+.panel {
+  background: #111827;
+  border: 1px solid #253047;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.race-state {
+  color: #94a3b8;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #293449;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+.selectors {
+  justify-content: flex-start;
+}
+
+label {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+select {
+  margin-left: 8px;
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.chart {
+  height: 280px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px 12px;
+  border-bottom: 1px solid #253047;
+  font-size: 14px;
+}
+
+th {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.driver-name {
+  margin-left: 12px;
+  color: #94a3b8;
+}
+
+.error {
+  color: #fca5a5;
+}
+
+footer {
+  text-align: center;
+  margin-top: 28px;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 24px 12px;
+  }
+
+  .panel,
+  .toolbar {
+    padding: 16px;
+  }
+
+  .driver-name {
+    display: none;
+  }
+}

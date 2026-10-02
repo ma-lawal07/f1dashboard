@@ -1,0 +1,8 @@
+﻿fastapi
+uvicorn[standard]
+fastf1
+pandas
+numpy
+scikit-learn
+pytest
+httpx
